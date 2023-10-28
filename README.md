@@ -14,6 +14,7 @@ w[n] ~ N(0,1) = \sqrt{\frac{N_0}{2 \times coderate}}
 N_0 = 10^\frac{SNR(dB)}{10}
 ```
 ## Explanation
+紀錄於 Explanation.pdf
 
 ## Result
-
+![This is an alt text.](/result.png "BER of BCH(15,7,2).")
