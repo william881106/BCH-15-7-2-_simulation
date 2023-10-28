@@ -1,8 +1,9 @@
-# DE10-nano---RIS-controller-with-RS232
-DE10-nano 上開發的 RIS phase controller ，以 UART 通訊協定 ( RS232 Transceiver ) 傳輸控制狀態
-## Hardware
-1. DE10-nano (可以使用其他 altera 的系列板，需要自行重新下PIN腳)
-2. HC-05 Bluetooth Module x 1  或  USB-to-TTL x 2 (差別是無線 / 有線傳輸，無線傳輸需要電腦有藍芽)
+# ECC - BCH code (15,7,2) BER simulation
+以 C++ 撰寫的 BCH code 模擬程式
+## simulation environment
+1. SNR：0 : 0.5 : 12
+2. 模擬次數：最少100,000次；根據100倍法則，總錯誤少於100個bits時不中斷。但節省模擬時間及BER=0的可能性，仍設最大次數設為3,000,000。
+3. 接收訊號$ 行內公式 $ r[n] = y[n] + w[n],  w[n] is noise $ ，0 ~N(0,1) = 2*Nnoisecoderate，__10010SNRindBN
 ## Function
 1. RIS_controller.v : main file
 2. _7Seg.v          : 七段顯示器的顯示電路 (7-segment)
